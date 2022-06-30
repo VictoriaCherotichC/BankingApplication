@@ -8,7 +8,7 @@ public class BankApplication {
 	int deposit;
 	int withdraw;
 	int balance = 5000;
-	int previousTransaction;
+	
 
 	// Constructor to get customer name and customer id
 	BankApplication(String cname, String cid) {
@@ -20,7 +20,6 @@ public class BankApplication {
 		System.out.println("1. View Balance");
 		System.out.println("2. Deposit cash");
 		System.out.println("3. Withdraw cash");
-		System.out.println("4. get previous transaction");
 		System.out.println("0 Exit");
 		System.out.println("Select 1 option");
 
@@ -32,7 +31,7 @@ public class BankApplication {
 				depositCash();
 			} else if (menuChoice == 3) {
 				withdrawCash();
-			} else if (menuChoice == 4) {
+			} else if (menuChoice == 0) {
 				exit();
 			}
 
